@@ -1,0 +1,24 @@
+{
+  "name": "issue-viewer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kubosho/issue-viewer",
+  "authors": [
+    "kubosho_ <ta2@o2p.jp>"
+  ],
+  "description": "Issue viewer for GitHub",
+  "main": "issue-viewer.js",
+  "keywords": [
+    "github"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "vue": "~0.10.4"
+  }
+}
