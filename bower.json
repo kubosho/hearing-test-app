@@ -1,14 +1,14 @@
 {
-  "name": "issue-viewer",
+  "name": "hearing-test-app",
   "version": "0.0.1",
-  "homepage": "https://github.com/kubosho/issue-viewer",
+  "homepage": "https://github.com/kubosho/hearing-test-app",
   "authors": [
     "kubosho_ <ta2@o2p.jp>"
   ],
-  "description": "Issue viewer for GitHub",
-  "main": "issue-viewer.js",
+  "description": "Hearing test app.",
+  "main": "src/hearing-test.js",
   "keywords": [
-    "github"
+    "sound"
   ],
   "license": "MIT",
   "ignore": [
