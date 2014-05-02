@@ -6,15 +6,14 @@
 	HearingTest.init = function init() {
 		var context = new window.AudioContext();
 
-		this.sound = this.createSound(context, 440);
+		this.sound = this.createSound(context);
 		this.sound.connect(context.destination);
+
+		return this;
 	}
 
-	HearingTest.createSound = function createSound(context, frequency) {
-		var oscillator = context.createOscillator();
-		oscillator.frequency.value = frequency;
-
-		return oscillator;
+	HearingTest.createSound = function createSound(context) {
+		return context.createOscillator();
 	};
 
 	HearingTest.startSound = function startSound(delay) {
