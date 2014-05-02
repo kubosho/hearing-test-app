@@ -12,6 +12,14 @@
 		methods: {
 			changeFrequency: function() {
 				hearing.sound.frequency.value = this.frequency;
+			},
+
+			playSound: function() {
+				hearingTest.playSound();
+			},
+
+			stopSound: function() {
+				hearingTest.stopSound();
 			}
 		}
 	});

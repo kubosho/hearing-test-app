@@ -16,7 +16,7 @@
 		return context.createOscillator();
 	};
 
-	HearingTest.startSound = function startSound(delay) {
+	HearingTest.playSound = function startSound(delay) {
 		delay = delay || 0;
 		this.sound.start(delay);
 	};
