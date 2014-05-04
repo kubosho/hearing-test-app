@@ -14,6 +14,10 @@
 		return context.createOscillator();
 	};
 
+	HearingTest.connect = function connect(context, sound) {
+		return sound.connect(context.destination);
+	}
+
 	HearingTest.playSound = function playSound(delay) {
 		delay = delay || 0;
 		this.sound.start(delay);
