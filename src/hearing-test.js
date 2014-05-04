@@ -4,10 +4,8 @@
 	var HearingTest = Object.create(null);
 
 	HearingTest.init = function init() {
-		var context = new window.AudioContext();
-
-		this.sound = this.createSound(context);
-		this.sound.connect(context.destination);
+		this.context = new window.AudioContext();
+		this.sound = this.createSound(this.context);
 
 		return this;
 	}
