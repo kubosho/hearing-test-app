@@ -3,7 +3,7 @@
 
 	var hearingTest = HearingTest;
 
-	var app = new Vue({
+	var app = exports.app = new Vue({
 		el: '#hearing-test-app',
 		data: {
 			isPlaySound: false,
