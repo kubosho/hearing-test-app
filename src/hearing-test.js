@@ -7,7 +7,13 @@
 	HearingTest.init = function init(frequency) {
 		frequency = frequency || 440;
 
-		return this;
+		var sound = this.createSound();
+		sound.frequency.value = frequency;
+		this.connect(sound);
+
+		this.sound = sound;
+
+		return sound;
 	}
 
 	HearingTest.createSound = function createSound(context) {
