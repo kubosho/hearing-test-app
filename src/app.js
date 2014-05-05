@@ -2,7 +2,6 @@
 	'use strict';
 
 	var hearingTest = HearingTest;
-	var hearing = hearingTest.init();
 
 	var app = new Vue({
 		el: '#hearing-test-app',
