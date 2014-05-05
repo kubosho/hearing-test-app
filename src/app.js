@@ -1,4 +1,4 @@
-(function (window) {
+(function (exports) {
 	'use strict';
 
 	var hearingTest = HearingTest;
