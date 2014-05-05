@@ -35,5 +35,4 @@
 	};
 
 	window.HearingTest = HearingTest;
-	return HearingTest;
 }(window));
