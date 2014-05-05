@@ -7,6 +7,7 @@
 	var app = new Vue({
 		el: '#hearing-test-app',
 		data: {
+			isPlaySound: false,
 			frequency: 1000
 		},
 		methods: {
