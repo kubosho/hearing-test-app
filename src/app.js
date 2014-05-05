@@ -25,7 +25,7 @@
 
 		methods: {
 			changeFrequency: function() {
-				hearing.sound.frequency.value = this.frequency;
+				this.$options.sound.frequency.value = this.frequency;
 			},
 
 			playSound: function() {
