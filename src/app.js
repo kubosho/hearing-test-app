@@ -13,6 +13,16 @@
 		methods: {
 			changeFrequency: function() {
 				hearing.sound.frequency.value = this.frequency;
+			},
+
+			playSound: function() {
+				hearingTest.playSound();
+				this.isPlaySound = true;
+			},
+
+			stopSound: function() {
+				hearingTest.stopSound();
+				this.isPlaySound = false;
 			}
 		}
 	});
