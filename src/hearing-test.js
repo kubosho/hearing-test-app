@@ -16,11 +16,11 @@
 		return sound;
 	}
 
-	HearingTest.createSound = function createSound(context) {
+	HearingTest.createSound = function createSound() {
 		return context.createOscillator();
 	};
 
-	HearingTest.connect = function connect(context, sound) {
+	HearingTest.connect = function connect(sound) {
 		return sound.connect(context.destination);
 	}
 
