@@ -7,8 +7,7 @@
 <body id="hearing-test-app">
 	周波数: {{frequency}}Hz
 	<input type="range" value="1000" min="1000" max="20000" v-model="frequency" v-on="change: changeFrequency">
-	<button v-on="click: playSound">Play</button>
-	<button v-on="click: stopSound">Stop</button>
+	<button v-on="click: toggleSound" v-text="isPlaySound ? 'Stop' : 'Play'">Play</button>
 
 	<script src="src/hearing-test.js"></script>
 	<script src="bower_components/vue/dist/vue.js"></script>
