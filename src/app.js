@@ -28,14 +28,14 @@
 				this.$options.sound.frequency.value = this.frequency;
 			},
 
-			playSound: function() {
-				hearingTest.playSound();
-				this.isPlaySound = true;
-			},
-
-			stopSound: function() {
-				hearingTest.stopSound();
-				this.isPlaySound = false;
+			toggleSound: function() {
+				if (this.isPlaySound) {
+					hearingTest.stopSound();
+				}
+				else {
+					hearingTest.playSound();
+				}
+				this.isPlaySound = !this.isPlaySound;
 			}
 		}
 	});
