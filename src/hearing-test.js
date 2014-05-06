@@ -14,7 +14,7 @@
 		this.sound = sound;
 
 		return sound;
-	}
+	};
 
 	HearingTest.createSound = function createSound() {
 		return context.createOscillator();
@@ -22,7 +22,7 @@
 
 	HearingTest.connect = function connect(sound) {
 		return sound.connect(context.destination);
-	}
+	};
 
 	HearingTest.playSound = function playSound(delay) {
 		delay = delay || 0;
