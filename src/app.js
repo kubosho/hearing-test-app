@@ -8,7 +8,7 @@
 
 		data: {
 			isPlaySound: false,
-			frequency: 1000
+			frequency: 20
 		},
 
 		sound: null,
