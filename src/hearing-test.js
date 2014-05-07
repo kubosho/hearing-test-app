@@ -1,4 +1,4 @@
-(function (window) {
+(function (exports) {
 	'use strict';
 
 	var HearingTest = Object.create(null);
@@ -34,5 +34,5 @@
 		this.sound.stop(delay);
 	};
 
-	window.HearingTest = HearingTest;
+	exports.HearingTest = HearingTest;
 }(window));
