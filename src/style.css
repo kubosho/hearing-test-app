@@ -1,10 +1,31 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
+	font-size: 16px;
+	font-size: 1.6rem;
 	text-align: center;
+}
+
+.global-header {
+	background: #003760;
+}
+
+.global-title {
+	margin: 0 0 20px;
+	color: #fff;
+}
+
+.current-frequency {
+	margin: 10px 0;
+	font-size: 24px;
+	font-size: 2.4rem;
 }
 
 .change-frequency {
 	display: block;
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 input[type=range] {
@@ -16,8 +37,8 @@ input[type=range] {
 	width: 10em;
 	padding: 10px;
 	border: 0;
-	font-size: 2.6rem;
 	font-size: 26px;
+	font-size: 2.6rem;
 }
 
 .btn-toggle-sound-Play {

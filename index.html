@@ -3,13 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>Hearing test</title>
-	<link rel="stylesheet" href="src/style.css">
+	<title>可聴域調査</title>
+	<link rel="stylesheet" href="./bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" href="./src/style.css">
 </head>
 <body id="hearing-test-app">
-	現在の周波数:
-	<output class="current-frequency">{{frequency}}</output>
-	Hz
+	<header class="global-header">
+		<h1 class="global-title">可聴域調査</h1>
+	</header>
+
+	<div class="current-frequency">
+		現在の周波数:
+		<output>{{frequency}}</output>
+		Hz
+	</div>
+
 	<div class="change-frequency">
 		<label>
 			周波数変更<br />

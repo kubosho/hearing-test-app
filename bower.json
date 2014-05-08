@@ -19,6 +19,7 @@
     "tests"
   ],
   "devDependencies": {
-    "vue": "~0.10.4"
+    "vue": "~0.10.4",
+    "normalize.css": "~3.0.1"
   }
 }
