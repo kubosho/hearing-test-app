@@ -9,18 +9,32 @@
 	現在の周波数:
 	<output class="current-frequency">{{frequency}}</output>
 	Hz
-	<span class="change-frequency">
+	<div class="change-frequency">
 		<label>
-			周波数変更
+			周波数変更<br />
 			<input type="range"
 			min="100"
 			max="20000"
 			step="100"
+			list="frequency-settings"
 			v-model="frequency"
 			v-on="change: changeFrequency"
 			>
+			<datalist id="frequency-settings">
+				<option>100</option>
+				<option>1000</option>
+				<option>5000</option>
+				<option>10000</option>
+				<option>14000</option>
+				<option>15000</option>
+				<option>16000</option>
+				<option>17000</option>
+				<option>18000</option>
+				<option>19000</option>
+				<option>20000</option>
+			</datalist>
 		</label>
-	</span>
+	</div>
 	<button class="btn-toggle-sound"
 	v-class="btn-toggle-sound-Stop: isPlaySound, btn-toggle-sound-Play: !isPlaySound,"
 	v-on="click: toggleSound"
