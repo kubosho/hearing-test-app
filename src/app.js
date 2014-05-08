@@ -14,8 +14,6 @@
 		sound: null,
 
 		created: function () {
-			this.$options.sound = hearingTest.init(this.frequency);
-
 			this.$watch('isPlaySound', function (isPlaySound) {
 				if (!isPlaySound) {
 					this.$options.sound = hearingTest.init(this.frequency);
