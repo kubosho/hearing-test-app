@@ -48,3 +48,7 @@ input[type=range] {
 .btn-toggle-sound-Stop {
 	background: #ff4136;
 }
+
+.attentions {
+	text-align: left;
+}
