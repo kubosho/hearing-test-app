@@ -7,6 +7,22 @@ body {
 	margin: 10px 0;
 }
 
+input[type=range] {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #aaa;
+	width: 250px;
+	height: 10px;
+}
+
+::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #111;
+	width: 10px;
+	height: 20px;
+}
+
 .btn-toggle-sound {
 	width: 10em;
 	padding: 10px;
