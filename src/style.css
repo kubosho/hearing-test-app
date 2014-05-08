@@ -53,5 +53,6 @@ input[type=range] {
 	width: 90%;
 	max-width: 600px;
 	margin: 20px auto;
+	padding: 0;
 	text-align: left;
 }
