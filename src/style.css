@@ -8,19 +8,8 @@ body {
 }
 
 input[type=range] {
-	-webkit-appearance: none;
-	appearance: none;
-	background: #aaa;
-	width: 250px;
-	height: 10px;
-}
-
-::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	background: #111;
-	width: 10px;
-	height: 20px;
+	width: 95%;
+	max-width: 600px;
 }
 
 .btn-toggle-sound {
