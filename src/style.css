@@ -29,7 +29,7 @@ body {
 }
 
 input[type=range] {
-	width: 95%;
+	width: 90%;
 	max-width: 600px;
 }
 
@@ -50,5 +50,8 @@ input[type=range] {
 }
 
 .attentions {
+	width: 90%;
+	max-width: 600px;
+	margin: 20px auto;
 	text-align: left;
 }
