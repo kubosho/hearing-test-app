@@ -2,6 +2,7 @@
 	'use strict';
 
 	var HearingTest = Object.create(null);
+	window.AudioContext = window.AudioContext || window.webkitAudioContext;
 	var context = new window.AudioContext();
 
 	HearingTest.init = function init(frequency) {
