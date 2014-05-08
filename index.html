@@ -44,11 +44,29 @@
 			</datalist>
 		</label>
 	</div>
+
 	<button class="btn-toggle-sound"
 	v-class="btn-toggle-sound-Stop: isPlaySound, btn-toggle-sound-Play: !isPlaySound,"
 	v-on="click: toggleSound"
 	v-text="isPlaySound ? 'Stop' : 'Play'"
-	>Play</button>
+	>
+	Play
+	</button>
+
+	<ul class="attentions">
+		<li>100Hz-20,000Hzまで測ることができます</li>
+		<li>ヘッドホン推奨です</li>
+		<li>各ブラウザの最新版をお使いください</li>
+		<li>AndroidはGoogle ChromeもしくはFirefoxをお使いください</li>
+		<li>iOSはバージョンが6.0以上をお使いください</li>
+		<li>IE/Android Browserは最新バージョンでも対応しておりません(2014/5/9現在)</li>
+	</ul>
+
+	<footer class="global-footer">
+		<p class="copyright">
+			<small>© 2014 <a href="https://twitter.com/kubosho_">kubosho_</a></small>
+		</p>
+	</footer>
 
 	<script src="./src/hearing-test.js"></script>
 	<script src="./bower_components/vue/dist/vue.js"></script>
