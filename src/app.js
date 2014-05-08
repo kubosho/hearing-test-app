@@ -27,12 +27,7 @@
 			},
 
 			toggleSound: function() {
-				if (this.isPlaySound) {
-					hearingTest.stopSound();
-				}
-				else {
-					hearingTest.playSound();
-				}
+				this.isPlaySound ? hearingTest.stopSound() : hearingTest.playSound();
 				this.isPlaySound = !this.isPlaySound;
 			}
 		}
