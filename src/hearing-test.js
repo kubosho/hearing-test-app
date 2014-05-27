@@ -2,23 +2,20 @@
 	'use strict';
 
 	var HearingTest = Object.create(null);
+
 	window.AudioContext = window.AudioContext || window.webkitAudioContext;
 	var context = new window.AudioContext();
 
 	HearingTest.init = function init(frequency) {
 		frequency = frequency || 440;
 
-		var sound = this.createSound();
+		var sound = context.createOscillator();
 		sound.frequency.value = frequency;
 		this.connect(sound);
 
 		this.sound = sound;
 
 		return sound;
-	};
-
-	HearingTest.createSound = function createSound() {
-		return context.createOscillator();
 	};
 
 	HearingTest.connect = function connect(sound) {
